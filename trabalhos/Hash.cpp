@@ -12,8 +12,7 @@ using namespace std;
 class TabelaHash {
 private:
   int tamanho;
-  vector<string> tabela;
-  vector<bool> ocupado;
+  vector<list<string>> tabela;
   int totalColisoes;
   vector<int> distribuicao; 
   int totalElementos;
@@ -21,12 +20,10 @@ private:
 public:
   TabelaHash(int tam) {
     tamanho = tam;
-    tabela.resize(tamanho);
-    ocupado.resize(tamanho, false); // Inicializa todas as posições como vazias
+    tabela.resize(tamanho); // Cada posição contém uma lista vazia
     totalColisoes = 0;
     totalElementos = 0;
-    // Inicializa a distribuição para contar de 0 a 10+ itens
-    distribuicao.resize(12, 0); // 0, 1, 2, ..., 10, 11+ (índice 11 representa >10)
+    distribuicao.resize(12, 0); // Para armazenar contagem de 0, 1, 2, ..., 10, >10 elementos
   }
 
   // Função hash que combina códigos ASCII das letras
@@ -39,61 +36,33 @@ public:
   // Insere uma cidade na tabela hash usando enlaçamento limite
   void inserir(const string& cidade) {
     int indice = hash(cidade);
-    int posInicial = indice;
     
-    // Se a posição calculada está ocupada, busca a próxima posição livre
-    if (ocupado[indice]) {
-      totalColisoes++;
-      int tentativa = 1;
-      
-      do {
-        // Move para a próxima posição (sondagem linear)
-        indice = (posInicial + tentativa) % tamanho;
-        tentativa++;
-        
-        // Se voltamos à posição inicial, a tabela está cheia
-        if (indice == posInicial) {
-          cout << "Erro: Tabela hash cheia!" << endl;
-          return;
-        }
-        
-        // Se a posição ainda está ocupada, incrementa colisão
-        if (ocupado[indice]) totalColisoes++;
-      } while (ocupado[indice]);
-    }
+    // Se a lista na posição indice não está vazia, tem-se uma colisão
+    if (!tabela[indice].empty()) totalColisoes++;
     
-    // Insere a cidade na posição encontrada
-    tabela[indice] = cidade;
-    ocupado[indice] = true;
+    // Adiciona a cidade no final da lista na posição calculada pelo hash
+    tabela[indice].push_back(cidade);
     totalElementos++;
   }
 
-  // Calcula as estatísticas de distribuição
+  // Calcula as estatísticas de distribuição (quantas cidades por posição)
   void calcularDistribuicao() {
-    // Resetamos a distribuição para recalcular
+    // Reseta a distribuição para recalcular
     fill(distribuicao.begin(), distribuicao.end(), 0);
     
-    // Conta a distância de cada elemento da sua posição hash ideal
-    vector<int> distancias(tamanho, 0);
-    
+    // Conta quantas posições têm 0, 1, 2, ... elementos
     for (int i = 0; i < tamanho; i++) {
-      if (ocupado[i]) {
-        int hashIdeal = hash(tabela[i]);
-        int dist = (i >= hashIdeal) ? (i - hashIdeal) : (tamanho + i - hashIdeal);
-        
-        if (dist > 10) distribuicao[11]++;
-        else distribuicao[dist]++;
-      }
+      int tamanhoLista = tabela[i].size();
+      
+      if (tamanhoLista > 10) distribuicao[11]++; // Posições com mais de 10 elementos
+      else distribuicao[tamanhoLista]++; // Posições com 0, 1, 2, ... 10 elementos
     }
-    
-    // Adiciona contagem dos slots vazios
-    distribuicao[0] += (tamanho - totalElementos);
   }
 
   // Exibe as estatísticas
   void mostrarEstatisticas() {
     double fatorCarga = static_cast<double>(totalElementos) / tamanho;
-    int enderecosUsados = totalElementos; // No enlaçamento limite, cada elemento ocupa exatamente um endereço
+    int enderecosUsados = tamanho - distribuicao[0]; // Posições não vazias
     
     cout << endl;
     cout << "╒═══════════════════════════════════════════╕\n";
@@ -110,18 +79,19 @@ public:
     cout << "└───────────────────────────────────────────┘\n";
     
     cout << endl;
-    cout << "┌───────────────────────────────────────────┐\n";
-    cout << "│          DISTRIBUIÇÃO DE DISTÂNCIAS       │\n";
-    cout << "├───────┬───────────┬─────────┬─────────────┤\n";
-    cout << "│ Dist. │ Elementos │    %    │ Acumulado % │\n";
-    cout << "├───────┼───────────┼─────────┼─────────────┤\n";
+    cout << "┌───────────────────────────────────────────────┐\n";
+    cout << "│       DISTRIBUIÇÃO DE CIDADES POR POSIÇÃO     │\n";
+    cout << "├───────┬───────────┬─────────┬─────────────────┤\n";
+    cout << "│ Quant.│ Endereços │    %    │   Acumulado %   │\n";
+    cout << "├───────┼───────────┼─────────┼─────────────────┤\n";
     
     double acumulado = 0.0;
     for (int i = 0; i < 11; i++) {
       double porcentagem = (distribuicao[i] * 100.0) / tamanho;
       acumulado += porcentagem;
       cout << "│ " << setw(5) << i << " │ " << setw(9) << distribuicao[i] << " │ " 
-           << setw(6) << setprecision(2) << porcentagem << "% │ " << setw(10) << setprecision(2) << acumulado << "% │\n";
+           << setw(6) << setprecision(2) << porcentagem << "% │ " << setw(10) 
+           << setprecision(2) << acumulado << "% │\n";
     }
     
     double porcentagem = (distribuicao[11] * 100.0) / tamanho;
@@ -129,13 +99,13 @@ public:
     cout << "│   >10 │ " << setw(9) << distribuicao[11] << " │ " 
          << setw(6) << porcentagem << "% │ " << setw(10) << acumulado << "% │\n";
     
-    cout << "└───────┴───────────┴─────────┴─────────────┘\n";
+    cout << "└───────┴───────────┴─────────┴─────────────────┘\n";
   }
   
   // Exporta as estatísticas para um arquivo CSV
   void exportarParaCSV(ofstream& arquivo, double tempoExecucao) {
     double fatorCarga = static_cast<double>(totalElementos) / tamanho;
-    int enderecosUsados = totalElementos;
+    int enderecosUsados = tamanho - distribuicao[0];
     double porcentagemEnderecos = (enderecosUsados * 100.0) / tamanho;
     
     // Informações gerais da tabela
@@ -184,9 +154,8 @@ int main() {
   
   // Escreve o cabeçalho do CSV
   csvArquivo << "Tamanho,Elementos,FatorCarga,Colisoes,EnderecosUsados,PorcentagemEnderecos,TempoExecucao";
-  // Cabeçalhos para distribuição
-  for (int i = 0; i <= 10; i++) csvArquivo << ",Dist_" << i;
-  csvArquivo << ",Dist_>10" << endl;
+  for (int i = 0; i <= 10; i++) csvArquivo << ",Qtd_" << i;
+  csvArquivo << ",Qtd_>10" << endl;
 
   cout << endl;
   cout << "╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍\n";

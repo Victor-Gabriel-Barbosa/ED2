@@ -69,7 +69,7 @@ salvar_figura(fig2, 'fator_carga_colisoes.png')
 
 # ======== Gráfico 3: Distribuição de Itens por Endereço ========
 # Extrai colunas de distribuição
-colunas_dist = [col for col in df.columns if col.startswith('Dist_')]
+colunas_dist = [col for col in df.columns if col.startswith('Qtd_')]
 dados_dist = df.loc[:, colunas_dist].T
 
 # Renomeia as colunas para serem os tamanhos das tabelas
@@ -92,7 +92,7 @@ for i, tamanho in enumerate(df['Tamanho']):
 
 # Ajustes do gráfico
 ax3.set_xticks(posicoes)
-ax3.set_xticklabels([col.replace('Dist_', '') for col in colunas_dist])
+ax3.set_xticklabels([col.replace('Qtd_', '') for col in colunas_dist])
 ax3.set_xlabel('Número de Itens por Endereço')
 ax3.set_ylabel('Quantidade de Endereços')
 ax3.set_title('Distribuição de Itens por Endereço para Diferentes Tamanhos de Tabela')

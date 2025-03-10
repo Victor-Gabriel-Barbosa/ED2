@@ -9,8 +9,8 @@ plt.rcParams['figure.figsize'] = (12, 7)
 plt.rcParams['font.size'] = 12
 
 # Caminho para o arquivo CSV e pasta de saída
-csv_path = 'C:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash.csv'
-output_dir = 'C:/Users/usuario/Desktop/Programas/ED_2/trabalhos/graficos'
+csv_path = 'C:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv'
+output_dir = 'C:/Users/usuario/Desktop/Programas/ED_2/trabalhos/graficos2'
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)

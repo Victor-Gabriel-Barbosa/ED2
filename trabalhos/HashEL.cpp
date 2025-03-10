@@ -144,7 +144,7 @@ int main() {
   arquivo.close();
   
   // Cria o arquivo CSV para exportação
-  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash.csv");
+  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv");
   if (!csvArquivo.is_open()) {
     cerr << "Erro ao criar arquivo de resultados CSV" << endl;
     return 1;
@@ -210,7 +210,7 @@ int main() {
   }
   
   csvArquivo.close();
-  cout << "Resultados exportados para: c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash.csv" << endl;
+  cout << "Resultados exportados para: c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv" << endl;
 
   return 0;
 }

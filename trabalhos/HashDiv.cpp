@@ -5,14 +5,13 @@
 #include <list>
 #include <chrono>
 #include <iomanip>
-
 using namespace std;
 
 // Classe que representa a tabela hash
 class TabelaHash {
 private:
   int tamanho;
-  vector<list<string>> tabela;
+  vector<pair<string, bool>> tabela; // Cada entrada é um par (cidade, ocupado)
   int totalColisoes;
   vector<int> distribuicao; 
   int totalElementos;
@@ -20,7 +19,7 @@ private:
 public:
   TabelaHash(int tam) {
     tamanho = tam;
-    tabela.resize(tamanho); // Cada posição contém uma lista vazia
+    tabela.resize(tamanho, {"", false}); // Inicializa com pares vazios (não ocupados)
     totalColisoes = 0;
     totalElementos = 0;
     distribuicao.resize(12, 0); // Para armazenar contagem de 0, 1, 2, ..., 10, >10 elementos
@@ -33,29 +32,47 @@ public:
     return hash % tamanho;
   }
 
-  // Insere uma cidade na tabela hash usando enlaçamento limite
+  // Insere uma cidade na tabela hash usando método da divisão (sondagem linear)
   void inserir(const string& cidade) {
     int indice = hash(cidade);
+    int indiceOriginal = indice;
+    bool colisaoOcorreu = false;
     
-    // Se a lista na posição indice não está vazia, tem-se uma colisão
-    if (!tabela[indice].empty()) totalColisoes++;
+    // Se a posição já está ocupada, procura próxima posição livre
+    while (tabela[indice].second) {
+      // Se a cidade já existe na tabela, não insere novamente
+      if (tabela[indice].first == cidade) return;
+      
+      // Registra colisão na primeira ocorrência
+      if (!colisaoOcorreu) {
+        totalColisoes++;
+        colisaoOcorreu = true;
+      }
+      
+      // Sondagem linear
+      indice = (indice + 1) % tamanho;
+      
+      // Se volta ao ponto inicial, a tabela está cheia
+      if (indice == indiceOriginal) {
+        cerr << "Tabela cheia! Impossível inserir." << endl;
+        return;
+      }
+    }
     
-    // Adiciona a cidade no final da lista na posição calculada pelo hash
-    tabela[indice].push_back(cidade);
+    // Adiciona a cidade na posição encontrada
+    tabela[indice].first = cidade;
+    tabela[indice].second = true;
     totalElementos++;
   }
 
-  // Calcula as estatísticas de distribuição (quantas cidades por posição)
+  // Calcula as estatísticas de distribuição
   void calcularDistribuicao() {
     // Reseta a distribuição para recalcular
     fill(distribuicao.begin(), distribuicao.end(), 0);
     
-    // Conta quantas posições têm 0, 1, 2, ... elementos
     for (int i = 0; i < tamanho; i++) {
-      int tamanhoLista = tabela[i].size();
-      
-      if (tamanhoLista > 10) distribuicao[11]++; // Posições com mais de 10 elementos
-      else distribuicao[tamanhoLista]++; // Posições com 0, 1, 2, ... 10 elementos
+      if (tabela[i].second) distribuicao[1]++; // Posição ocupada
+      else distribuicao[0]++; // Posição vazia
     }
   }
 
@@ -122,7 +139,6 @@ public:
     arquivo << endl;
   }
   
-  // Getters para uso no main
   int getTotalColisoes() const { return totalColisoes; }
   int getTotalElementos() const { return totalElementos; }
   const vector<int>& getDistribuicao() const { return distribuicao; }
@@ -199,7 +215,7 @@ int main() {
          << " │ " << setw(6) << fixed << setprecision(3) 
          << (static_cast<double>(tabela.getTotalElementos()) / tamanho);
     
-    // Formatar tempo (ms para valores maiores, μs para menores)
+    // Formata tempo (ms para valores maiores, μs para menores)
     if (duracao.count() > 10000) {
       auto duracaoMs = chrono::duration_cast<chrono::milliseconds>(fim - inicio);
       cout << " │ " << setw(8) << duracaoMs.count() << " ms    │\n";

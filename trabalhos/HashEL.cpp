@@ -25,14 +25,44 @@ public:
     distribuicao.resize(12, 0); // Para armazenar contagem de 0, 1, 2, ..., 10, >10 elementos
   }
 
-  // Função hash que combina códigos ASCII das letras
+  // Função hash que implementa o método do enlaçamento limite
   int hash(const string& cidade) {
-    unsigned long hash = 0;
-    for (char c : cidade) hash = hash * 31 + static_cast<unsigned char>(c);
-    return hash % tamanho;
+    const int GRUPO_TAMANHO = 3; // Tamanho de cada grupo de caracteres
+    vector<int> grupos;
+    
+    // Converte a string em grupos de valores numéricos
+    for (size_t i = 0; i < cidade.length(); i += GRUPO_TAMANHO) {
+      int valor = 0;
+      size_t fim = min(i + GRUPO_TAMANHO, cidade.length());
+      
+      // Calcula valor numérico para cada grupo
+      for (size_t j = i; j < fim; j++) valor = valor * 10 + static_cast<unsigned char>(cidade[j]) % 10;
+      
+      grupos.push_back(valor);
+    }
+    
+    // Inverte os grupos do meio
+    for (size_t i = 1; i < grupos.size() - 1; i++) {
+      // Inverte os dígitos do número
+      int original = grupos[i];
+      int invertido = 0;
+      
+      while (original > 0) {
+        invertido = invertido * 10 + original % 10;
+        original /= 10;
+      }
+      
+      grupos[i] = invertido;
+    }
+    
+    // Soma todos os grupos
+    int soma = 0;
+    for (int valor : grupos) soma += valor;
+    
+    return soma % tamanho;
   }
 
-  // Insere uma cidade na tabela hash usando enlaçamento limite
+  // Insere uma cidade na tabela hash usando o método do enlaçamento limite
   void inserir(const string& cidade) {
     int indice = hash(cidade);
     
@@ -90,13 +120,13 @@ public:
       acumulado += porcentagem;
       cout << "│ " << setw(5) << i << " │ " << setw(9) << distribuicao[i] << " │ " 
            << setw(6) << setprecision(2) << porcentagem << "% │ " << setw(10) 
-           << setprecision(2) << acumulado << "% │\n";
+           << setprecision(2) << acumulado << "%     │\n";
     }
     
     double porcentagem = (distribuicao[11] * 100.0) / tamanho;
     acumulado += porcentagem;
     cout << "│   >10 │ " << setw(9) << distribuicao[11] << " │ " 
-         << setw(6) << porcentagem << "% │ " << setw(10) << acumulado << "% │\n";
+         << setw(6) << porcentagem << "% │ " << setw(10) << acumulado << "%     │\n";
     
     cout << "└───────┴───────────┴─────────┴─────────────────┘\n";
   }

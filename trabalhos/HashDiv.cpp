@@ -11,7 +11,7 @@ using namespace std;
 class TabelaHash {
 private:
   int tamanho;
-  vector<pair<string, bool>> tabela; // Cada entrada é um par (cidade, ocupado)
+  vector<list<string>> tabela;
   int totalColisoes;
   vector<int> distribuicao; 
   int totalElementos;
@@ -19,60 +19,42 @@ private:
 public:
   TabelaHash(int tam) {
     tamanho = tam;
-    tabela.resize(tamanho, {"", false}); // Inicializa com pares vazios (não ocupados)
+    tabela.resize(tamanho); // Cada posição contém uma lista vazia
     totalColisoes = 0;
     totalElementos = 0;
     distribuicao.resize(12, 0); // Para armazenar contagem de 0, 1, 2, ..., 10, >10 elementos
   }
 
-  // Função hash que combina códigos ASCII das letras
+  // Função hash implementa o método da divisão
   int hash(const string& cidade) {
     unsigned long hash = 0;
     for (char c : cidade) hash = hash * 31 + static_cast<unsigned char>(c);
     return hash % tamanho;
   }
 
-  // Insere uma cidade na tabela hash usando método da divisão (sondagem linear)
+  // Insere uma cidade na tabela hash usando o método da divisão
   void inserir(const string& cidade) {
     int indice = hash(cidade);
-    int indiceOriginal = indice;
-    bool colisaoOcorreu = false;
     
-    // Se a posição já está ocupada, procura próxima posição livre
-    while (tabela[indice].second) {
-      // Se a cidade já existe na tabela, não insere novamente
-      if (tabela[indice].first == cidade) return;
-      
-      // Registra colisão na primeira ocorrência
-      if (!colisaoOcorreu) {
-        totalColisoes++;
-        colisaoOcorreu = true;
-      }
-      
-      // Sondagem linear
-      indice = (indice + 1) % tamanho;
-      
-      // Se volta ao ponto inicial, a tabela está cheia
-      if (indice == indiceOriginal) {
-        cerr << "Tabela cheia! Impossível inserir." << endl;
-        return;
-      }
-    }
+    // Se a lista na posição indice não está vazia, tem-se uma colisão
+    if (!tabela[indice].empty()) totalColisoes++;
     
-    // Adiciona a cidade na posição encontrada
-    tabela[indice].first = cidade;
-    tabela[indice].second = true;
+    // Adiciona a cidade no final da lista na posição calculada pelo hash
+    tabela[indice].push_back(cidade);
     totalElementos++;
   }
 
-  // Calcula as estatísticas de distribuição
+  // Calcula as estatísticas de distribuição (quantas cidades por posição)
   void calcularDistribuicao() {
     // Reseta a distribuição para recalcular
     fill(distribuicao.begin(), distribuicao.end(), 0);
     
+    // Conta quantas posições têm 0, 1, 2, ... elementos
     for (int i = 0; i < tamanho; i++) {
-      if (tabela[i].second) distribuicao[1]++; // Posição ocupada
-      else distribuicao[0]++; // Posição vazia
+      int tamanhoLista = tabela[i].size();
+      
+      if (tamanhoLista > 10) distribuicao[11]++; // Posições com mais de 10 elementos
+      else distribuicao[tamanhoLista]++; // Posições com 0, 1, 2, ... 10 elementos
     }
   }
 
@@ -108,13 +90,13 @@ public:
       acumulado += porcentagem;
       cout << "│ " << setw(5) << i << " │ " << setw(9) << distribuicao[i] << " │ " 
            << setw(6) << setprecision(2) << porcentagem << "% │ " << setw(10) 
-           << setprecision(2) << acumulado << "% │\n";
+           << setprecision(2) << acumulado << "%     │\n";
     }
     
     double porcentagem = (distribuicao[11] * 100.0) / tamanho;
     acumulado += porcentagem;
     cout << "│   >10 │ " << setw(9) << distribuicao[11] << " │ " 
-         << setw(6) << porcentagem << "% │ " << setw(10) << acumulado << "% │\n";
+         << setw(6) << porcentagem << "% │ " << setw(10) << acumulado << "%     │\n";
     
     cout << "└───────┴───────────┴─────────┴─────────────────┘\n";
   }
@@ -162,7 +144,7 @@ int main() {
   arquivo.close();
   
   // Cria o arquivo CSV para exportação
-  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash1.csv");
+  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv");
   if (!csvArquivo.is_open()) {
     cerr << "Erro ao criar arquivo de resultados CSV" << endl;
     return 1;

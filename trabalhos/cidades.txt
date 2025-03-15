@@ -1,47 +1,47 @@
 Abadia dos Dourados
-Abaeté
+AbaetÃ©
 Abre-Campo
 Acaiaca
-Açucena
-Água Boa
-Água Comprida
+AÃ§ucena
+Ãgua Boa
+Ãgua Comprida
 Aguanil
-Águas Formosas
-Águas Vermelhas
-Aimorés
+Ãguas Formosas
+Ãguas Vermelhas
+AimorÃ©s
 Aiuruoca
 Alagoa
 Albertina
-Além Paraíba
+AlÃ©m ParaÃ­ba
 Alfenas
 Alfredo Vasconcelos
 Almenara
 Alpercata
-Alpinópolis
+AlpinÃ³polis
 Alterosa
-Alto Caparaó
-Alto Jequitibá
+Alto CaparaÃ³
+Alto JequitibÃ¡
 Alto Rio Doce
 Alvarenga
-Alvinópolis
+AlvinÃ³polis
 Alvorada de Minas
 Amparo da Serra
 Andradas
-Andrelândia
-Angelândia
-Antônio Carlos
-Antônio Dias
-Antônio Prado de Minas
-Araçaí
+AndrelÃ¢ndia
+AngelÃ¢ndia
+AntÃ´nio Carlos
+AntÃ´nio Dias
+AntÃ´nio Prado de Minas
+AraÃ§aÃ­
 Aracitaba
-Araçuaí
+AraÃ§uaÃ­
 Araguari
 Arantina
 Araponga
-Araporã
-Arapuá
-Araújos
-Araxá
+AraporÃ£
+ArapuÃ¡
+AraÃºjos
+AraxÃ¡
 Arceburgo
 Arcos
 Areado
@@ -49,15 +49,15 @@ Argirita
 Aricanduva
 Arinos
 Astolfo Dutra
-Ataléia
+AtalÃ©ia
 Augusto de Lima
 Baependi
 Baldim
-Bambuí
+BambuÃ­
 Bandeira
 Bandeira do Sul
-Barão de Cocais
-Barão de Monte Alto
+BarÃ£o de Cocais
+BarÃ£o de Monte Alto
 Barbacena
 Barra Longa
 Barroso
@@ -68,12 +68,12 @@ Belo Oriente
 Belo Vale
 Berilo
 Berizal
-Bertópolis
+BertÃ³polis
 Betim
 Bias Fortes
 Bicas
 Biquinhas
-Boa Esperança
+Boa EsperanÃ§a
 Bocaina de Minas
 Bocaiuva
 Bom Despacho
@@ -84,19 +84,19 @@ Bom Jesus do Galho
 Bom Repouso
 Bom Sucesso
 Bonfim
-Bonfinópolis de Minas
+BonfinÃ³polis de Minas
 Bonito de Minas
 Borda da Mata
 Botelhos
 Botumirim
-Brás Pires
-Brasilândia de Minas
-Brasília de Minas
-Brasópolis
-Braúnas
+BrÃ¡s Pires
+BrasilÃ¢ndia de Minas
+BrasÃ­lia de Minas
+BrasÃ³polis
+BraÃºnas
 Brumadinho
-Bueno Brandão
-Buenópolis
+Bueno BrandÃ£o
+BuenÃ³polis
 Bugre
 Buritis
 Buritizeiro
@@ -104,18 +104,18 @@ Cabeceira Grande
 Cabo Verde
 Cachoeira da Prata
 Cachoeira de Minas
-Cachoeira de Pajeú
+Cachoeira de PajeÃº
 Cachoeira Dourada
-Caetanópolis
-Caeté
+CaetanÃ³polis
+CaetÃ©
 Caiana
 Cajuri
 Caldas
 Camacho
 Camanducaia
-Cambuí
+CambuÃ­
 Cambuquira
-Campanário
+CampanÃ¡rio
 Campanha
 Campestre
 Campina Verde
@@ -126,75 +126,75 @@ Campo Florido
 Campos Altos
 Campos Gerais
 Cana Verde
-Canaã
-Canápolis
+CanaÃ£
+CanÃ¡polis
 Candeias
 Cantagalo
-Caparaó
+CaparaÃ³
 Capela Nova
 Capelinha
 Capetinga
 Capim Branco
-Capinópolis
-Capitão Andrade
-Capitão Enéas
-Capitólio
+CapinÃ³polis
+CapitÃ£o Andrade
+CapitÃ£o EnÃ©as
+CapitÃ³lio
 Caputira
-Caraí
-Caranaíba
-Carandaí
+CaraÃ­
+CaranaÃ­ba
+CarandaÃ­
 Carangola
 Caratinga
 Carbonita
-Careaçu
+CareaÃ§u
 Carlos Chagas
-Carmésia
+CarmÃ©sia
 Carmo da Cachoeira
 Carmo da Mata
 Carmo de Minas
 Carmo do Cajuru
-Carmo do Paranaíba
+Carmo do ParanaÃ­ba
 Carmo do Rio Claro
-Carmópolis de Minas
+CarmÃ³polis de Minas
 Carneirinho
 Carrancas
-Carvalhópolis
+CarvalhÃ³polis
 Carvalhos
 Casa Grande
 Cascalho Rico
-Cássia
+CÃ¡ssia
 Cataguases
 Catas Altas
 Catas Altas da Noruega
 Catuji
 Catuti
 Caxambu
-Cedro do Abaeté
+Cedro do AbaetÃ©
 Central de Minas
 Centralina
-Chácara
-Chalé
+ChÃ¡cara
+ChalÃ©
 Chapada do Norte
-Chapada Gaúcha
+Chapada GaÃºcha
 Chiador
-Cipotânea
+CipotÃ¢nea
 Claraval
-Claro dos Poções
-Cláudio
+Claro dos PoÃ§Ãµes
+ClÃ¡udio
 Coimbra
 Coluna
 Comendador Gomes
 Comercinho
-Conceição da Aparecida
-Conceição da Barra de Minas
-Conceição das Alagoas
-Conceição das Pedras
-Conceição de Ipanema
-Conceição do Mato Dentro
-Conceição do Pará
-Conceição do Rio Verde
-Conceição dos Ouros
-Cônego Marinho
+ConceiÃ§Ã£o da Aparecida
+ConceiÃ§Ã£o da Barra de Minas
+ConceiÃ§Ã£o das Alagoas
+ConceiÃ§Ã£o das Pedras
+ConceiÃ§Ã£o de Ipanema
+ConceiÃ§Ã£o do Mato Dentro
+ConceiÃ§Ã£o do ParÃ¡
+ConceiÃ§Ã£o do Rio Verde
+ConceiÃ§Ã£o dos Ouros
+CÃ´nego Marinho
 Confins
 Congonhal
 Congonhas
@@ -202,12 +202,12 @@ Congonhas do Norte
 Conquista
 Conselheiro Lafaiete
 Conselheiro Pena
-Consolação
+ConsolaÃ§Ã£o
 Contagem
 Coqueiral
-Coração de Jesus
+CoraÃ§Ã£o de Jesus
 Cordisburgo
-Cordislândia
+CordislÃ¢ndia
 Corinto
 Coroaci
 Coromandel
@@ -215,75 +215,75 @@ Coronel Fabriciano
 Coronel Murta
 Coronel Pacheco
 Coronel Xavier Chaves
-Córrego Danta
-Córrego do Bom Jesus
-Córrego Fundo
-Córrego Novo
-Couto de Magalhães de Minas
-Crisólita
+CÃ³rrego Danta
+CÃ³rrego do Bom Jesus
+CÃ³rrego Fundo
+CÃ³rrego Novo
+Couto de MagalhÃ£es de Minas
+CrisÃ³lita
 Cristais
-Cristália
+CristÃ¡lia
 Cristiano Otoni
 Cristina
-Crucilândia
+CrucilÃ¢ndia
 Cruzeiro da Fortaleza
-Cruzília
+CruzÃ­lia
 Cuparaque
 Curral de Dentro
 Curvelo
 Datas
 Delfim Moreira
-Delfinópolis
+DelfinÃ³polis
 Delta
 Descoberto
 Desterro de Entre Rios
 Desterro do Melo
 Diamantina
 Diogo de Vasconcelos
-Dionísio
-Divinésia
+DionÃ­sio
+DivinÃ©sia
 Divino
 Divino das Laranjeiras
-Divinolândia de Minas
-Divinópolis
+DivinolÃ¢ndia de Minas
+DivinÃ³polis
 Divisa Alegre
 Divisa Nova
-Divisópolis
+DivisÃ³polis
 Dom Bosco
 Dom Cavati
 Dom Joaquim
-Dom Silvério
-Dom Viçoso
-Dona Eusébia
+Dom SilvÃ©rio
+Dom ViÃ§oso
+Dona EusÃ©bia
 Dores de Campos
-Dores de Guanhães
-Dores do Indaiá
+Dores de GuanhÃ£es
+Dores do IndaiÃ¡
 Dores do Turvo
-Doresópolis
+DoresÃ³polis
 Douradoquara
-Durandé
-Elói Mendes
+DurandÃ©
+ElÃ³i Mendes
 Engenheiro Caldas
 Engenheiro Navarro
 Entre Folhas
 Entre Rios de Minas
-Ervália
+ErvÃ¡lia
 Esmeraldas
 Espera Feliz
 Espinosa
-Espírito Santo do Dourado
+EspÃ­rito Santo do Dourado
 Estiva
 Estrela Dalva
-Estrela do Indaiá
+Estrela do IndaiÃ¡
 Estrela do Sul
-Eugenópolis
-Ewbank da Câmara
+EugenÃ³polis
+Ewbank da CÃ¢mara
 Extrema
 Fama
 Faria Lemos
-Felício dos Santos
+FelÃ­cio dos Santos
 Felisburgo
-Felixlândia
+FelixlÃ¢ndia
 Fernandes Tourinho
 Ferros
 Fervedouro
@@ -292,84 +292,84 @@ Formiga
 Formoso
 Fortaleza de Minas
 Fortuna de Minas
-Francisco Badaró
+Francisco BadarÃ³
 Francisco Dumont
-Francisco Sá
-Franciscópolis
+Francisco SÃ¡
+FranciscÃ³polis
 Frei Gaspar
-Frei Inocêncio
+Frei InocÃªncio
 Frei Lagonegro
 Fronteira
 Fronteira dos Vales
 Fruta de Leite
 Frutal
-Funilândia
+FunilÃ¢ndia
 Galileia
 Gameleiras
-Glaucilândia
+GlaucilÃ¢ndia
 Goiabeira
-Goianá
-Gonçalves
+GoianÃ¡
+GonÃ§alves
 Gonzaga
 Gouveia
 Governador Valadares
-Grão Mogol
+GrÃ£o Mogol
 Grupiara
-Guanhães
-Guapé
+GuanhÃ£es
+GuapÃ©
 Guaraciaba
 Guaraciama
-Guaranésia
+GuaranÃ©sia
 Guarani
-Guarará
+GuararÃ¡
 Guarda-Mor
-Guaxupé
+GuaxupÃ©
 Guidoval
-Guimarânia
+GuimarÃ¢nia
 Guiricema
-Gurinhatã
+GurinhatÃ£
 Heliodora
 Iapu
 Ibertioga
-Ibiá
-Ibiaí
+IbiÃ¡
+IbiaÃ­
 Ibiracatu
 Ibiraci
-Ibirité
-Ibitiúra de Minas
+IbiritÃ©
+IbitiÃºra de Minas
 Ibituruna
-Icaraí de Minas
-Igarapé
+IcaraÃ­ de Minas
+IgarapÃ©
 Igaratinga
 Iguatama
 Ijaci
-Ilicínea
-Imbé de Minas
+IlicÃ­nea
+ImbÃ© de Minas
 Inconfidentes
 Indaiabira
-Indianópolis
-Ingaí
+IndianÃ³polis
+IngaÃ­
 Inhapim
-Inhaúma
+InhaÃºma
 Inimutaba
 Ipaba
 Ipanema
 Ipatinga
-Ipiaçu
-Ipuiúna
-Iraí de Minas
+IpiaÃ§u
+IpuiÃºna
+IraÃ­ de Minas
 Itabira
 Itabirinha
 Itabirito
 Itacambira
 Itacarambi
 Itaguara
-Itaipé
-Itajubá
+ItaipÃ©
+ItajubÃ¡
 Itamarandiba
 Itamarati de Minas
 Itambacuri
-Itambé do Mato Dentro
+ItambÃ© do Mato Dentro
 Itamogi
 Itamonte
 Itanhandu
@@ -378,9 +378,9 @@ Itaobim
 Itapagipe
 Itapecerica
 Itapeva
-Itatiaiuçu
-Itaú de Minas
-Itaúna
+ItatiaiuÃ§u
+ItaÃº de Minas
+ItaÃºna
 Itaverava
 Itinga
 Itueta
@@ -390,36 +390,36 @@ Iturama
 Itutinga
 Jaboticatubas
 Jacinto
-Jacuí
+JacuÃ­
 Jacutinga
-Jaguaraçu
-Jaíba
+JaguaraÃ§u
+JaÃ­ba
 Jampruca
-Janaúba
-Januária
-Japaraíba
+JanaÃºba
+JanuÃ¡ria
+JaparaÃ­ba
 Japonvar
 Jeceaba
 Jenipapo de Minas
 Jequeri
-Jequitaí
-Jequitibá
+JequitaÃ­
+JequitibÃ¡
 Jequitinhonha
-Jesuânia
-Joaíma
-Joanésia
-João Monlevade
-João Pinheiro
-Joaquim Felício
-Jordânia
-José Gonçalves de Minas
-José Raydan
-Josenópolis
+JesuÃ¢nia
+JoaÃ­ma
+JoanÃ©sia
+JoÃ£o Monlevade
+JoÃ£o Pinheiro
+Joaquim FelÃ­cio
+JordÃ¢nia
+JosÃ© GonÃ§alves de Minas
+JosÃ© Raydan
+JosenÃ³polis
 Juatuba
 Juiz de Fora
 Juramento
 Juruaia
-Juvenília
+JuvenÃ­lia
 Ladainha
 Lagamar
 Lagoa da Prata
@@ -442,8 +442,8 @@ Lima Duarte
 Limeira do Oeste
 Lontra
 Luisburgo
-Luislândia
-Luminárias
+LuislÃ¢ndia
+LuminÃ¡rias
 Luz
 Machacalis
 Machado
@@ -451,136 +451,136 @@ Madre de Deus de Minas
 Malacacheta
 Mamonas
 Manga
-Manhuaçu
+ManhuaÃ§u
 Manhumirim
 Mantena
 Mar de Espanha
 Maravilhas
-Maria da Fé
+Maria da FÃ©
 Mariana
 Marilac
-Mário Campos
-Maripá de Minas
-Marliéria
-Marmelópolis
+MÃ¡rio Campos
+MaripÃ¡ de Minas
+MarliÃ©ria
+MarmelÃ³polis
 Martinho Campos
 Martins Soares
 Mata Verde
-Materlândia
+MaterlÃ¢ndia
 Mateus Leme
 Mathias Lobato
 Matias Barbosa
 Matias Cardoso
-Matipó
+MatipÃ³
 Mato Verde
 Matozinhos
 Matutina
 Medeiros
 Medina
 Mendes Pimentel
-Mercês
+MercÃªs
 Mesquita
 Minas Novas
 Minduri
 Mirabela
 Miradouro
-Miraí
-Miravânia
+MiraÃ­
+MiravÃ¢nia
 Moeda
 Moema
 Monjolos
 Monsenhor Paulo
-Montalvânia
+MontalvÃ¢nia
 Monte Alegre de Minas
 Monte Azul
 Monte Belo
 Monte Carmelo
 Monte Formoso
 Monte Santo de Minas
-Monte Sião
+Monte SiÃ£o
 Montes Claros
 Montezuma
 Morada Nova de Minas
-Morro da Garça
+Morro da GarÃ§a
 Morro do Pilar
 Munhoz
-Muriaé
+MuriaÃ©
 Mutum
 Muzambinho
 Nacip Raydan
 Nanuque
 Naque
-Natalândia
-Natércia
+NatalÃ¢ndia
+NatÃ©rcia
 Nazareno
 Nepomuceno
 Ninheira
-Nova Belém
+Nova BelÃ©m
 Nova Era
 Nova Lima
-Nova Módica
+Nova MÃ³dica
 Nova Ponte
 Nova Porteirinha
 Nova Resende
 Nova Serrana
-Nova União
+Nova UniÃ£o
 Novo Cruzeiro
 Novo Oriente de Minas
 Novorizonte
 Olaria
-Olhos-d'Água
-Olímpio Noronha
+Olhos-d'Ãgua
+OlÃ­mpio Noronha
 Oliveira
 Oliveira Fortes
-Onça de Pitangui
-Oratórios
-Orizânia
+OnÃ§a de Pitangui
+OratÃ³rios
+OrizÃ¢nia
 Ouro Branco
 Ouro Fino
 Ouro Preto
 Ouro Verde de Minas
 Padre Carvalho
-Padre Paraíso
+Padre ParaÃ­so
 Pai Pedro
 Paineiras
 Pains
 Paiva
 Palma
-Palmópolis
+PalmÃ³polis
 Papagaios
-Pará de Minas
+ParÃ¡ de Minas
 Paracatu
-Paraguaçu
-Paraisópolis
+ParaguaÃ§u
+ParaisÃ³polis
 Paraopeba
 Passa-Quatro
 Passa Tempo
-Passabém
+PassabÃ©m
 Passa-Vinte
 Passos
 Patis
 Patos de Minas
-Patrocínio
-Patrocínio do Muriaé
-Paula Cândido
+PatrocÃ­nio
+PatrocÃ­nio do MuriaÃ©
+Paula CÃ¢ndido
 Paulistas
-Pavão
-Peçanha
+PavÃ£o
+PeÃ§anha
 Pedra Azul
 Pedra Bonita
 Pedra do Anta
-Pedra do Indaiá
+Pedra do IndaiÃ¡
 Pedra Dourada
 Pedralva
 Pedras de Maria da Cruz
-Pedrinópolis
+PedrinÃ³polis
 Pedro Leopoldo
 Pedro Teixeira
 Pequeri
 Pequi
-Perdigão
+PerdigÃ£o
 Perdizes
-Perdões
+PerdÃµes
 Periquito
 Pescador
 Piau
@@ -589,39 +589,39 @@ Piedade de Ponte Nova
 Piedade do Rio Grande
 Piedade dos Gerais
 Pimenta
-Pingo-d'Água
-Pintópolis
+Pingo-d'Ãgua
+PintÃ³polis
 Piracema
 Pirajuba
 Piranga
-Piranguçu
+PiranguÃ§u
 Piranguinho
 Pirapetinga
 Pirapora
-Piraúba
+PiraÃºba
 Pitangui
 Piumhi
 Planura
-Poço Fundo
-Poços de Caldas
+PoÃ§o Fundo
+PoÃ§os de Caldas
 Pocrane
-Pompéu
+PompÃ©u
 Ponte Nova
 Ponto Chique
 Ponto dos Volantes
 Porteirinha
 Porto Firme
-Poté
+PotÃ©
 Pouso Alegre
 Pouso Alto
 Prados
 Prata
-Pratápolis
+PratÃ¡polis
 Pratinha
 Presidente Bernardes
 Presidente Juscelino
 Presidente Kubitschek
-Presidente Olegário
+Presidente OlegÃ¡rio
 Prudente de Morais
 Quartel Geral
 Queluzito
@@ -634,8 +634,8 @@ Resplendor
 Ressaquinha
 Riachinho
 Riacho dos Machados
-Ribeirão das Neves
-Ribeirão Vermelho
+RibeirÃ£o das Neves
+RibeirÃ£o Vermelho
 Rio Acima
 Rio Casca
 Rio do Prado
@@ -643,211 +643,211 @@ Rio Doce
 Rio Espera
 Rio Manso
 Rio Novo
-Rio Paranaíba
+Rio ParanaÃ­ba
 Rio Pardo de Minas
 Rio Piracicaba
 Rio Pomba
 Rio Preto
 Rio Vermelho
-Ritápolis
+RitÃ¡polis
 Rochedo de Minas
 Rodeiro
 Romaria
-Rosário da Limeira
+RosÃ¡rio da Limeira
 Rubelita
 Rubim
-Sabará
-Sabinópolis
+SabarÃ¡
+SabinÃ³polis
 Sacramento
 Salinas
 Salto da Divisa
-Santa Bárbara
-Santa Bárbara do Leste
-Santa Bárbara do Monte Verde
-Santa Bárbara do Tugúrio
+Santa BÃ¡rbara
+Santa BÃ¡rbara do Leste
+Santa BÃ¡rbara do Monte Verde
+Santa BÃ¡rbara do TugÃºrio
 Santa Cruz de Minas
 Santa Cruz de Salinas
 Santa Cruz do Escalvado
-Santa Efigênia de Minas
-Santa Fé de Minas
+Santa EfigÃªnia de Minas
+Santa FÃ© de Minas
 Santa Helena de Minas
 Santa Juliana
 Santa Luzia
 Santa Margarida
 Santa Maria de Itabira
 Santa Maria do Salto
-Santa Maria do Suaçuí
+Santa Maria do SuaÃ§uÃ­
 Santa Rita de Caldas
 Santa Rita de Ibitipoca
 Santa Rita de Jacutinga
 Santa Rita de Minas
 Santa Rita do Itueto
-Santa Rita do Sapucaí
+Santa Rita do SapucaÃ­
 Santa Rosa da Serra
-Santa Vitória
+Santa VitÃ³ria
 Santana da Vargem
 Santana de Cataguases
 Santana de Pirapama
 Santana do Deserto
-Santana do Garambéu
-Santana do Jacaré
-Santana do Manhuaçu
-Santana do Paraíso
+Santana do GarambÃ©u
+Santana do JacarÃ©
+Santana do ManhuaÃ§u
+Santana do ParaÃ­so
 Santana do Riacho
 Santana dos Montes
-Santo Antônio do Amparo
-Santo Antônio do Aventureiro
-Santo Antônio do Grama
-Santo Antônio do Itambé
-Santo Antônio do Jacinto
-Santo Antônio do Monte
-Santo Antônio do Retiro
-Santo Antônio do Rio Abaixo
-Santo Hipólito
+Santo AntÃ´nio do Amparo
+Santo AntÃ´nio do Aventureiro
+Santo AntÃ´nio do Grama
+Santo AntÃ´nio do ItambÃ©
+Santo AntÃ´nio do Jacinto
+Santo AntÃ´nio do Monte
+Santo AntÃ´nio do Retiro
+Santo AntÃ´nio do Rio Abaixo
+Santo HipÃ³lito
 Santos Dumont
-São Bento Abade
-São Brás do Suaçuí
-São Domingos das Dores
-São Domingos do Prata
-São Félix de Minas
-São Francisco
-São Francisco de Paula
-São Francisco de Sales
-São Francisco do Glória
-São Geraldo
-São Geraldo da Piedade
-São Geraldo do Baixio
-São Gonçalo do Abaeté
-São Gonçalo do Pará
-São Gonçalo do Rio Abaixo
-São Gonçalo do Rio Preto
-São Gonçalo do Sapucaí
-São Gotardo
-São João Batista do Glória
-São João da Lagoa
-São João da Mata
-São João da Ponte
-São João das Missões
-São João del-Rei
-São João do Manhuaçu
-São João do Manteninha
-São João do Oriente
-São João do Pacuí
-São João do Paraíso
-São João Evangelista
-São João Nepomuceno
-São Joaquim de Bicas
-São José da Barra
-São José da Lapa
-São José da Safira
-São José da Varginha
-São José do Alegre
-São José do Divino
-São José do Goiabal
-São José do Jacuri
-São José do Mantimento
-São Lourenço
-São Miguel do Anta
-São Pedro da União
-São Pedro do Suaçuí
-São Pedro dos Ferros
-São Romão
-São Roque de Minas
-São Sebastião da Bela Vista
-São Sebastião da Vargem Alegre
-São Sebastião do Anta
-São Sebastião do Maranhão
-São Sebastião do Oeste
-São Sebastião do Paraíso
-São Sebastião do Rio Preto
-São Sebastião do Rio Verde
-São Thomé das Letras
-São Tiago
-São Tomás de Aquino
-São Vicente de Minas
-Sapucaí-Mirim
-Sardoá
+SÃ£o Bento Abade
+SÃ£o BrÃ¡s do SuaÃ§uÃ­
+SÃ£o Domingos das Dores
+SÃ£o Domingos do Prata
+SÃ£o FÃ©lix de Minas
+SÃ£o Francisco
+SÃ£o Francisco de Paula
+SÃ£o Francisco de Sales
+SÃ£o Francisco do GlÃ³ria
+SÃ£o Geraldo
+SÃ£o Geraldo da Piedade
+SÃ£o Geraldo do Baixio
+SÃ£o GonÃ§alo do AbaetÃ©
+SÃ£o GonÃ§alo do ParÃ¡
+SÃ£o GonÃ§alo do Rio Abaixo
+SÃ£o GonÃ§alo do Rio Preto
+SÃ£o GonÃ§alo do SapucaÃ­
+SÃ£o Gotardo
+SÃ£o JoÃ£o Batista do GlÃ³ria
+SÃ£o JoÃ£o da Lagoa
+SÃ£o JoÃ£o da Mata
+SÃ£o JoÃ£o da Ponte
+SÃ£o JoÃ£o das MissÃµes
+SÃ£o JoÃ£o del-Rei
+SÃ£o JoÃ£o do ManhuaÃ§u
+SÃ£o JoÃ£o do Manteninha
+SÃ£o JoÃ£o do Oriente
+SÃ£o JoÃ£o do PacuÃ­
+SÃ£o JoÃ£o do ParaÃ­so
+SÃ£o JoÃ£o Evangelista
+SÃ£o JoÃ£o Nepomuceno
+SÃ£o Joaquim de Bicas
+SÃ£o JosÃ© da Barra
+SÃ£o JosÃ© da Lapa
+SÃ£o JosÃ© da Safira
+SÃ£o JosÃ© da Varginha
+SÃ£o JosÃ© do Alegre
+SÃ£o JosÃ© do Divino
+SÃ£o JosÃ© do Goiabal
+SÃ£o JosÃ© do Jacuri
+SÃ£o JosÃ© do Mantimento
+SÃ£o LourenÃ§o
+SÃ£o Miguel do Anta
+SÃ£o Pedro da UniÃ£o
+SÃ£o Pedro do SuaÃ§uÃ­
+SÃ£o Pedro dos Ferros
+SÃ£o RomÃ£o
+SÃ£o Roque de Minas
+SÃ£o SebastiÃ£o da Bela Vista
+SÃ£o SebastiÃ£o da Vargem Alegre
+SÃ£o SebastiÃ£o do Anta
+SÃ£o SebastiÃ£o do MaranhÃ£o
+SÃ£o SebastiÃ£o do Oeste
+SÃ£o SebastiÃ£o do ParaÃ­so
+SÃ£o SebastiÃ£o do Rio Preto
+SÃ£o SebastiÃ£o do Rio Verde
+SÃ£o ThomÃ© das Letras
+SÃ£o Tiago
+SÃ£o TomÃ¡s de Aquino
+SÃ£o Vicente de Minas
+SapucaÃ­-Mirim
+SardoÃ¡
 Sarzedo
 Sem-Peixe
 Senador Amaral
 Senador Cortes
 Senador Firmino
-Senador José Bento
-Senador Modestino Gonçalves
+Senador JosÃ© Bento
+Senador Modestino GonÃ§alves
 Senhora de Oliveira
 Senhora do Porto
-Senhora dos Remédios
+Senhora dos RemÃ©dios
 Sericita
 Seritinga
 Serra Azul de Minas
 Serra da Saudade
 Serra do Salitre
-Serra dos Aimorés
+Serra dos AimorÃ©s
 Serrania
-Serranópolis de Minas
+SerranÃ³polis de Minas
 Serranos
 Serro
 Sete Lagoas
 Setubinha
-Silveirânia
-Silvianópolis
-Simão Pereira
-Simonésia
-Sobrália
+SilveirÃ¢nia
+SilvianÃ³polis
+SimÃ£o Pereira
+SimonÃ©sia
+SobrÃ¡lia
 Soledade de Minas
 Tabuleiro
 Taiobeiras
 Taparuba
 Tapira
-Tapiraí
-Taquaraçu de Minas
+TapiraÃ­
+TaquaraÃ§u de Minas
 Tarumirim
 Teixeiras
-Teófilo Otoni
-Timóteo
+TeÃ³filo Otoni
+TimÃ³teo
 Tiradentes
 Tiros
 Tocantins
 Tocos do Moji
 Toledo
 Tombos
-Três Corações
-Três Marias
-Três Pontas
+TrÃªs CoraÃ§Ãµes
+TrÃªs Marias
+TrÃªs Pontas
 Tumiritinga
 Tupaciguara
 Turmalina
-Turvolândia
-Ubá
-Ubaí
+TurvolÃ¢ndia
+UbÃ¡
+UbaÃ­
 Ubaporanga
 Uberaba
-Uberlândia
+UberlÃ¢ndia
 Umburatiba
-Unaí
-União de Minas
+UnaÃ­
+UniÃ£o de Minas
 Uruana de Minas
-Urucânia
+UrucÃ¢nia
 Urucuia
 Vargem Alegre
 Vargem Bonita
 Vargem Grande do Rio Pardo
 Varginha
-Varjão de Minas
-Várzea da Palma
-Varzelândia
+VarjÃ£o de Minas
+VÃ¡rzea da Palma
+VarzelÃ¢ndia
 Vazante
-Verdelândia
+VerdelÃ¢ndia
 Veredinha
-Veríssimo
+VerÃ­ssimo
 Vermelho Novo
 Vespasiano
-Viçosa
+ViÃ§osa
 Vieiras
 Virgem da Lapa
-Virgínia
-Virginópolis
-Virgolândia
+VirgÃ­nia
+VirginÃ³polis
+VirgolÃ¢ndia
 Visconde do Rio Branco
 Volta Grande
 Wenceslau Braz

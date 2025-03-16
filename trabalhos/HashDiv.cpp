@@ -28,7 +28,7 @@ public:
   // Função hash implementa o método da divisão
   int hash(const string& cidade) {
     unsigned long hash = 0;
-    for (char c : cidade) hash = hash * 31 + static_cast<unsigned char>(c);
+    for (char c : cidade) hash = hash + static_cast<unsigned char>(c);
     return hash % tamanho;
   }
 
@@ -144,7 +144,7 @@ int main() {
   arquivo.close();
   
   // Cria o arquivo CSV para exportação
-  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv");
+  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash1.csv");
   if (!csvArquivo.is_open()) {
     cerr << "Erro ao criar arquivo de resultados CSV" << endl;
     return 1;

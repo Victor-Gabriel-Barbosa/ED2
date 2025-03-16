@@ -9,12 +9,12 @@ plt.rcParams['figure.figsize'] = (12, 7)
 plt.rcParams['font.size'] = 12
 
 # Obtém o diretório atual do script
-dir = os.path.dirname(os.path.abspath(__file__))
+diretorio_atual = os.path.dirname(os.path.abspath(__file__))
 
 # Caminho para os arquivos CSV e pasta de saída
-csv_path_div = os.path.join(dir, 'resultados_hash1.csv')
-csv_path_el = os.path.join(dir, 'resultados_hash2.csv')
-output_dir = os.path.join(dir, 'graficos_comparativos')
+csv_path_div = os.path.join(diretorio_atual, 'resultados_hash1.csv')
+csv_path_el = os.path.join(diretorio_atual, 'resultados_hash2.csv')
+output_dir = os.path.join(diretorio_atual, 'graficos_comparativos')
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)

@@ -160,7 +160,7 @@ int main() {
   // Vetores de tamanhos para testar
   vector<int> tamanhos = {853, 1000, 1500, 2000, 2500};
   
-  ifstream arquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/cidades.txt");
+  ifstream arquivo("../cidades.txt");
   if (!arquivo.is_open()) {
     cerr << "Erro ao abrir o arquivo cidades.txt" << endl;
     return 1;
@@ -174,7 +174,7 @@ int main() {
   arquivo.close();
   
   // Cria o arquivo CSV para exportação
-  ofstream csvArquivo("c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv");
+  ofstream csvArquivo("../resultados_hash2.csv");
   if (!csvArquivo.is_open()) {
     cerr << "Erro ao criar arquivo de resultados CSV" << endl;
     return 1;
@@ -240,7 +240,7 @@ int main() {
   }
   
   csvArquivo.close();
-  cout << "Resultados exportados para: c:/Users/usuario/Desktop/Programas/ED_2/trabalhos/resultados_hash2.csv" << endl;
+  cout << "Resultados exportados para: resultados_hash2.csv" << endl;
 
   return 0;
 }

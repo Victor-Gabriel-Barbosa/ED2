@@ -6,6 +6,26 @@
 #include <vector>
 using namespace std;
 
+/**
+ * @brief Implementa o algoritmo de Edmonds-Karp para encontrar o fluxo máximo em um grafo.
+ * 
+ * O algoritmo de Edmonds-Karp é uma implementação específica do algoritmo de Ford-Fulkerson
+ * que utiliza a Busca em Largura (BFS) para encontrar caminhos de aumento. Este algoritmo
+ * tem complexidade de tempo O(V * E²), onde V é o número de vértices e E é o número de arestas.
+ * 
+ * @param grafo Matriz de adjacência representando o grafo, onde grafo[u][v] é a capacidade residual da aresta (u,v)
+ * @param fonte Vértice de origem do fluxo
+ * @param sumidouro Vértice de destino do fluxo
+ * @return O valor do fluxo máximo da fonte até o sumidouro
+ * 
+ * O algoritmo funciona da seguinte forma:
+ * 1. Enquanto existir um caminho de aumento da fonte ao sumidouro:
+ *    a. Encontra um caminho usando BFS (garante encontrar o caminho mais curto)
+ *    b. Calcula o fluxo máximo possível neste caminho (menor capacidade residual)
+ *    c. Atualiza o grafo residual: diminui a capacidade nas arestas usadas e aumenta nas reversas
+ *    d. Incrementa o fluxo total
+ * 2. Retorna o fluxo máximo calculado
+ */
 // Algoritmo de Edmonds-Karp para encontrar o fluxo máximo
 int edmondsKarp(vector<vector<int>> &grafo, int fonte, int sumidouro) {
   int vertices = grafo.size();
@@ -14,17 +34,22 @@ int edmondsKarp(vector<vector<int>> &grafo, int fonte, int sumidouro) {
 
   // BFS para encontrar um caminho de aumento
   while (continua) {
-    vector<int> pai(vertices, -1);
-    queue<int> fila;
-    fila.push(fonte);
-    pai[fonte] = -2; // Marca a fonte como visitada
+    vector<int> pai(vertices, -1); // Vetor para armazenar o caminho
+    queue<int> fila;  // Fila para BFS
+    fila.push(fonte); // Adiciona a fonte à fila
+    pai[fonte] = -2;  // Marca a fonte como visitada
 
+    // Realiza a busca em largura
     while (!fila.empty() && pai[sumidouro] == -1) {
+      // Retira o primeiro elemento da fila
       int u = fila.front();
-      fila.pop();
+      fila.pop(); 
 
-      for (int v = 0; v < vertices; ++v) {
+      // Verifica todos os vértices adjacentes
+      for (int v = 0; v < vertices; ++v) { 
+        // Se não foi visitado e há capacidade residual na aresta (u,v)
         if (pai[v] == -1 && grafo[u][v] > 0) {
+          // Marca o vértice como visitado e armazena o pai
           pai[v] = u;
           fila.push(v);
         }
@@ -46,14 +71,17 @@ int edmondsKarp(vector<vector<int>> &grafo, int fonte, int sumidouro) {
 
     // Atualiza o grafo residual
     for (int v = sumidouro; v != fonte; v = pai[v]) {
-      int u = pai[v];
-      grafo[u][v] -= fluxoCaminho;
-      grafo[v][u] += fluxoCaminho; // Adiciona aresta reversa para capacidade residual
+      int u = pai[v]; // Pega o pai do vértice atual
+
+      grafo[u][v] -= fluxoCaminho; // Diminui a capacidade da aresta (u,v)
+      grafo[v][u] += fluxoCaminho; // Aumenta a capacidade da aresta reversa (v,u)
     }
 
+    // Incrementa o fluxo total
     fluxoMaximo += fluxoCaminho;
   }
 
+  // Retorna o fluxo máximo encontrado
   return fluxoMaximo;
 }
 
@@ -64,8 +92,9 @@ int main() {
   // Mapeia os tamanhos de camiseta para os índices
   map<string, int> tamanhoParaIndice = {{"XXL", 0}, {"XL", 1}, {"L", 2},
                                         {"M", 3},   {"S", 4},  {"XS", 5}};
-
-  while (casosTeste--) {
+  
+  // Lê o número de casos de teste
+  while (casosTeste--) { 
     // N é o número total de camisetas
     // M é o número de voluntários
     // N/6 é o número de camisetas de cada tamanho
@@ -100,7 +129,8 @@ int main() {
     // Encontra fluxo máximo
     int fluxoMaximo = edmondsKarp(grafo, fonte, sumidouro);
 
-    // Se todos os voluntários podem receber uma camiseta, fluxoMaximo deve ser igual a M
+    // Se todos os voluntários podem receber uma camiseta, 
+    // o fluxoMaximo deve ser igual a M
     if (fluxoMaximo == M) cout << "YES" << endl;
     else cout << "NO" << endl;
   }

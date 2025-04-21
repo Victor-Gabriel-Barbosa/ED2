@@ -2,37 +2,28 @@ using namespace std;
 #include <bits/stdc++.h>
 
 // Encontra a maior substring comum usando programação dinâmica
-int substringPD(string linha1, string linha2) {
-  int tam1 = linha1.length();
-  int tam2 = linha2.length();
-  int maiorComprimento = 0;
-
-  // Armazena os resultados de subproblemas
-  // pd[i][j] = tamanho da maior substring comum que termina em linha1[i-1] e linha2[j-1]
-  vector<vector<int>> pd(tam1 + 1, vector<int>(tam2 + 1, 0));
+int substrPD(string L1, string L2) {
+  int M = 0, tamL1 = L1.length(), tamL2 = L2.length();
+  vector<vector<int>> pd(tamL1 + 1, vector<int>(tamL2 + 1, 0));
 
   // Preenche a matriz de programação dinâmica
-  for (int i = 1; i <= tam1; i++) {
-    for (int j = 1; j <= tam2; j++) {
-      // Se os caracteres atuais correspondem
-      if (linha1[i - 1] == linha2[j - 1]) {
-        // Estende a substring comum em 1
-        pd[i][j] = pd[i - 1][j - 1] + 1;
-
+  for (int i = 1; i < tamL1 + 1; i++) {
+    for (int j = 1; j < tamL2 + 1; j++) {
+      if (L1[i - 1] == L2[j - 1]) {
         // Atualiza o maior comprimento se encontra uma substring maior
-        maiorComprimento = max(maiorComprimento, pd[i][j]);
+        M = max(M, (pd[i][j] = pd[i - 1][j - 1] + 1));
       }
     }
   }
 
-  return maiorComprimento;
+  return M;
 }
 
 int main() {
-  string linha1, linha2;
+  string L1, L2;
 
-  // Lê as strings até o final da entrada
-  while (getline(cin, linha1) && getline(cin, linha2)) cout << substringPD(linha1, linha2) << endl;
+  // Lê e processa as entradas
+  while (getline(cin, L1) && getline(cin, L2)) cout << substrPD(L1, L2) << endl;
 
   return 0;
 }
